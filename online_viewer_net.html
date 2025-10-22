@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BRIGHTS — Оригинальные бренды. Без компромиссов.</title>
+  <meta name="description" content="BRIGHTS — curated selection of original street & premium brands. Без подделок. Без компромиссов." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-dark-1: #000000;
+      --bg-dark-2: #0b0b0b;
+      --white: #ffffff;
+      --muted: #9aa0a6;
+      --accent: #e6e9ee; /* light accent to match logo / mockup */
+      --maxw:1100px;
+      --radius:16px;
+      --gap:24px;
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:10%;margin:0;background:linear-gradient(100deg,var(--bg-dark-1),var(--bg-dark-2));color:var(--white);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    header.appbar{position:sticky;top:0;z-index:60;background:transparent;padding:18px 0}
+    .appbar-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo-wrap{display:flex;align-items:center;gap:12px}
+    .logo-img{width:140px;height:auto;display:block}
+    .nav{display:flex;gap:18px;align-items:center}
+    .nav a{color:var(--muted);font-weight:500}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:10px;background:var(--white);color:#000;font-weight:700}
+    main{padding:40px 0 80px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:60px 0}
+    .hero h1{font-size:42px;margin:0 0 12px;line-height:1.02;letter-spacing:0.2px;font-weight:900}
+    .hero p.lead{color:var(--accent);margin:0 0 24px;font-size:18px;font-weight:500}
+    .download-badges{display:flex;gap:12px;flex-wrap:wrap}
+    .badge-app{display:inline-flex;align-items:center;gap:12px;padding:12px 16px;border-radius:999px;background:#fff;color:#000;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.35)}
+    .subtitle{color:var(--muted);margin-top:8px}
+
+    /* Cards */
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+    .card{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:22px;border-radius:12px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{color:var(--muted);margin:0;font-size:15px}
+
+    /* How */
+    .how{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px}
+    .how-step{display:flex;gap:16px;align-items:flex-start}
+    .how-num{width:46px;height:46px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--white)}
+
+    /* Mockup */
+    .mockups{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .mockup-frame{width:320px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,0.06);box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+    .mockup-frame img{display:block;width:100%;height:auto;object-fit:cover}
+
+    /* Contacts & footer */
+    footer{padding:36px 0 60px;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03);margin-top:40px}
+    .socials{display:flex;gap:10px;align-items:center}
+    .socials a{color:var(--muted);font-weight:600}
+
+    /* Responsive */
+    @media (max-width:1000px){ .hero{grid-template-columns:1fr 320px} .cards{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:720px){
+      header.appbar{padding:12px 0}
+      .appbar-inner{height:auto;flex-direction:column;gap:12px;align-items:flex-start}
+      .hero{grid-template-columns:1fr; text-align:left}
+      .mockups{flex-direction:row;justify-content:center}
+      .cards{grid-template-columns:1fr}
+      .how{grid-template-columns:1fr}
+      .nav{display:none}
+      .hero h1{font-size:28px}
+    }
+
+    /* Focus */
+    a:focus, button:focus {outline:3px solid rgba(255,255,255,0.08); outline-offset:3px}
+  </style>
+</head>
+<body>
+  <header class="appbar" role="banner">
+    <div class="container appbar-inner">
+      <div class="brand">
+        <a class="logo-wrap" href="#" aria-label="Brights — главная">
+          <!-- Вставлен логотип (белый на прозрачном фоне) -->
+    <a href="https://ibb.co/C384y7nb"><img src="https://i.ibb.co/C384y7nb/photo-2025-10-21-17-10-45.jpg" alt="photo-2025-10-21-17-10-45" border="0"></a>
+        </a>
+        <div style="display:flex;flex-direction:column;line-height:1;">
+          <strong style="font-size:14px;letter-spacing:0.6px">BRIGHTS</strong>
+          <small style="color:var(--muted);font-size:13px">Оригинальные бренды. Без компромиссов.</small>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Главное меню">
+        <a href="#about">О сервисе</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#how">Как работает</a>
+        <a href="#download" class="btn" style="background:#fff;color:#000">Скачать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home" aria-label="Главный блок">
+      <div>
+        <h1>BRIGHTS</h1>
+        <p class="lead">Редакционный выбор оригинальных street & premium брендов. Только подлинное — проверено вручную.</p>
+
+        <p class="subtitle">Мы отбираем вещи, которые остаются в гардеробе надолго. Для тех, кто ценит качество и эстетику.</p>
+
+        <div class="download-badges" aria-hidden="false" style="margin-top:22px">
+          <a class="badge-app" href="https://apps.apple.com/ru/app/brights/id6456890948" target="_blank" rel="noopener noreferrer" aria-label="Скачать в App Store">
+            <!-- Мини-бейдж App Store (текст + иконка) -->
+            <sv width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path fill="#000" d="M4 6h16v12H4z"/></svg>
+            Скачать в App Store
+          </a>
+        </div>
+
+        <div class="cards" style="margin-top:36px">
+          <article class="card" aria-labelledby="benef1"><h3 id="benef1">Гарантия аутентичности</h3><p>Каждая вещь проверяется командой экспертов и поставляется напрямую от бренда или авторизованных продавцов.</p></article>
+          <article class="card" aria-labelledby="benef2"><h3 id="benef2">Кураторские подборки</h3><p>Еженедельные подборки и рекомендации от стилистов — экономьте время и открывайте новое.</p></article>
+          <article class="card" aria-labelledby="benef3"><h3 id="benef3">Premium опыт</h3><p>Интуитивный интерфейс, быстрая поддержка и забота о каждом клиенте.</p></article>
+        </div>
+      </div>
+
+      <aside class="mockups" aria-label="Мокап приложения">
+        <div class="mockup-frame" role="img" aria-label="Мокап мобильного приложения Brights">
+         <a href="https://ibb.co/zWKmJJxL"><img src="https://i.ibb.co/35tTzzd8/21-10-2025-20-16.png" alt="21-10-2025-20-16" border="0"></a>
+        </div>
+        <small style="color:var(--muted)">Откройте приложение для полного каталога и персональных подборок.</small>
+      </aside>
+    </section>
+
+    <!-- О сервисе -->
+    <section id="about" class="container" aria-labelledby="about-h" style="padding-top:36px">
+      <h2 id="about-h" style="color:var(--white)">О сервисе</h2>
+      <p style="color:var(--muted);max-width:900px">BRIGHTS — это место для тех, кто ищет оригинальные вещи и ценит эстетику. Мы собираем коллекции редких и актуальных релизов, проверяем подлинность и доставляем максимальный комфорт покупателю. В приложении — персональные рекомендации, ленты релизов и private drop'ы от брендов.</p>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="benefits" class="container" aria-labelledby="benefits-h" style="padding-top:36px">
+      <h2 id="benefits-h" style="color:var(--white)">Преимущества</h2>
+      <div class="cards" style="margin-top:16px">
+        <div class="card"><h3>Отбор редакции</h3><p style="color:var(--muted)">Эксперты выбирают только то, что действительно стоит внимания.</p></div>
+        <div class="card"><h3>Быстрая поддержка</h3><p style="color:var(--muted)">Поддержка в мессенджерах и по телефону — решаем вопросы оперативно.</p></div>
+        <div class="card"><h3>Безопасная оплата</h3><p style="color:var(--muted)">Шифрование и безопасные платежи — ваши данные под надёжной защитой.</p></div>
+      </div>
+    </section>
+
+    <!-- Как работает -->
+    <section id="how" class="container" aria-labelledby="how-h" style="padding-top:36px">
+      <h2 id="how-h" style="color:var(--white)">Как это работает</h2>
+      <p style="color:var(--muted);max-width:900px">Простая логика: отбор → проверка → доставка. Ничего лишнего — только качественные вещи и прозрачные условия.</p>
+
+      <div class="how" style="margin-top:18px">
+        <div>
+          <div class="how-step">
+            <div class="how-num">1</div>
+            <div>
+              <strong>Выбор</strong>
+              <div style="color:var(--muted)">Редакторы отбирают коллекции и формируют ленты релизов.</div>
+            </div>
+          </div>
+
+          <div class="how-step" style="margin-top:14px">
+            <div class="how-num">2</div>
+            <div>
+              <strong>Проверка</strong>
+              <div style="color:var(--muted)">Каждый товар проходит проверку подлинности и качества.</div>
+            </div>
+          </div>
+
+          <div class="how-step" style="margin-top:14px">
+            <div class="how-num">3</div>
+            <div>
+              <strong>Доставка</strong>
+              <div style="color:var(--muted)">Быстрая и аккуратная доставка с трекингом и поддержкой.</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="background:rgba(255,255,255,0.03);padding:18px;border-radius:12px">
+            <h4 style="margin:0 0 8px">Для кого</h4>
+            <p style="color:var(--muted);margin:0">Для коллекционеров, ценителей качественной одежды и тех, кто устал от подделок — BRIGHTS делает выбор простым.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Скачать приложение -->
+    <section id="download" class="container" aria-labelledby="download-h" style="padding-top:36px">
+      <h2 id="download-h" style="color:var(--white)">Скачать приложение</h2>
+      <p style="color:var(--muted)">Приложение уже доступно в App Store — полные коллекции, push о релизах и персональный фидбек.</p>
+
+      <div style="margin-top:12px">
+        <a class="badge-app" href="https://apps.apple.com/ru/app/brights/id6456890948" target="_blank" rel="noopener noreferrer" aria-label="Скачать Brights в App Store">
+          
+          Скачать в App Store
+        </a>
+      </div>
+
+   
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="container" style="padding-top:36px" aria-labelledby="contacts-h">
+      <h2 id="contacts-h" style="color:var(--white)">Контакты и социальные сети</h2>
+
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;align-items:flex-start">
+        <div style="min-width:240px;flex:1">
+          <h4 style="color:var(--white)">Связаться</h4>
+          <p style="color:var(--muted)">Email: <a href="mailto:support@brights.example" style="color:var(--muted)">ooobrights@gmail.com</a></p>
+          <p style="color:var(--muted)">Телефон: <a href="tel:+1234567890" style="color:var(--muted)">+7 (916) 155-54-24</a></p>
+        </div>
+
+        <div style="min-width:240px;">
+          <h4 style="color:var(--white)">Соцсети</h4>
+          <div class="socials" aria-label="Социальные сети">
+            
+            <a href="https://t.me/brightsmod" aria-label="Telegram" title="Telegram">Telegram</a>
+      
+          </div>
+        </div>
+
+        <div style="min-width:240px;">
+          <h4 style="color:var(--white)">Форма</h4>
+          <form action="mailto:support@brights.example" method="post" enctype="text/plain" aria-label="Форма обратной связи">
+            <div style="display:flex;gap:8px;flex-direction:column">
+              <input type="text" name="name" placeholder="Имя" aria-label="Ваше имя" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:var(--white)">
+              <input type="email" name="email" placeholder="Email" aria-label="Ваш email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:var(--white)">
+              <textarea name="msg" placeholder="Сообщение" aria-label="Сообщение" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:var(--white)"></textarea>
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <small style="color:var(--muted)">© <strong>BRIGHTS</strong> — <span id="year"></span></small>
+        <span style="margin-left:12px"><a href="/privacy.html" style="color:var(--muted)">Политика конфиденциальности</a></span>
+        <span style="margin-left:8px"><a href="/terms.html" style="color:var(--muted)">Условия использования</a></span>
+      </div>
+      <div style="color:var(--muted)"><small>Поддержка: <a href="mailto:support@brights.example" style="color:var(--muted)">ooobrights@gmail.com</a></small></div>
+    </div>
+  </footer>
+
+  <script defer>
+    // dynamic year + smooth scroll
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const links = document.querySelectorAll('a[href^="#"]');
+      for(const a of links){
+        a.addEventListener('click', function(e){
+          const target = document.querySelector(this.getAttribute('href'));
+          if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
